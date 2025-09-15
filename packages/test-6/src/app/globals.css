@@ -24,3 +24,101 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom animations */
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateY(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) translateY(0);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.8), 0 0 60px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 1s ease-out;
+}
+
+.animate-wave-1 { animation: wave 2s ease-in-out infinite; animation-delay: 0.1s; }
+.animate-wave-2 { animation: wave 2s ease-in-out infinite; animation-delay: 0.2s; }
+.animate-wave-3 { animation: wave 2s ease-in-out infinite; animation-delay: 0.3s; }
+.animate-wave-4 { animation: wave 2s ease-in-out infinite; animation-delay: 0.4s; }
+.animate-wave-5 { animation: wave 2s ease-in-out infinite; animation-delay: 0.5s; }
+.animate-wave-6 { animation: wave 2s ease-in-out infinite; animation-delay: 0.6s; }
+.animate-wave-7 { animation: wave 2s ease-in-out infinite; animation-delay: 0.7s; }
+.animate-wave-8 { animation: wave 2s ease-in-out infinite; animation-delay: 0.8s; }
+.animate-wave-9 { animation: wave 2s ease-in-out infinite; animation-delay: 0.9s; }
+.animate-wave-10 { animation: wave 2s ease-in-out infinite; animation-delay: 1s; }
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
