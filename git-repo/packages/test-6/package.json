@@ -1,0 +1,13 @@
+{
+  "name": "test-6",
+  "version": "1.0.0",
+  "description": "Awesome animated Hello coop app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
